@@ -1,0 +1,93 @@
+/* * {
+  border: thin solid;
+  border-color: red;
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-custom {
+  background-color: white;
+  box-shadow: 0px 4px 6px -6px rgba(59, 58, 58, 0.35);
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  border-radius: 17.5px;
+  background-color: rgb(14, 65, 35);
+}
+
+.logo-front {
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.logo-back {
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  color: rgb(177, 239, 182);
+  transition: color .15s linear;
+}
+
+.list-custom {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  margin-top: 5px;
+}
+
+.link-custom {
+  font-size: smaller;
+  width: 100px;
+  height: 35px;
+  border-radius: 17.5px;
+  color:rgb(14, 65, 35);
+  transition: background-color .5s;
+}
+
+.link-custom:hover {
+  background-color: rgb(14, 65, 35);
+  color: white;
+  text-decoration: none;
+}
+
+.link-custom:not(.active):hover .fa-solid {
+  color: white;
+}
+
+.fa-solid {
+  color: rgb(14, 65, 35);
+}
+
+.nav-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 17.5px;
+  transition: background-color .5s;
+}
+
+.active .fa-solid, .active p {
+  color: rgb(177, 239, 182);
+}
+
+.logo:hover .logo-back {
+  color: rgb(251, 189, 211);
+}
+
+.nav-link:hover {
+  background-color: rgb(14, 65, 35);
+}
+
+.nav-link:not(.active):hover .fa-solid {
+  color: white;
+}
