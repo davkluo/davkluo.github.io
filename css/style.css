@@ -162,12 +162,20 @@ body {
   border-radius: 10px;
 }
 
+.about-text {
+  font-size: .8rem;
+}
+
+.contact-buttons .fa-solid, .contact-buttons .fa-brands {
+  font-size: x-large;
+}
+
 @media (max-width: 576px) {
   .carousel-item img {
     height: 30vh;
   }
-}
 
-.about-text {
-  font-size: .8rem;
+  .contact-buttons .fa-solid, .contact-buttons .fa-brands {
+    font-size: large;
+  }
 }
