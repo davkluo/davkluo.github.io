@@ -1,8 +1,8 @@
 /* * {
   border: thin solid;
   border-color: red;
-}
- */
+} */
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -178,4 +178,9 @@ body {
   .contact-buttons .fa-solid, .contact-buttons .fa-brands {
     font-size: large;
   }
+}
+
+.resume-download .fa-file-pdf {
+  font-size: x-large;
+  color: black;
 }
