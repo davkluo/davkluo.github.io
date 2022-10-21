@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David's Resume</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="/css/style.css" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="//kit.fontawesome.com/31bb58186a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -25,119 +25,205 @@
   </script>
 
   <div class="container">
-    <div class="row mt-5 justify-content-center align-items-center">
+    <!-- Page heading -->
+    <div class="row mt-5 page-heading">
       <div class="col-12 col-md-8 h2 text-center">Resume</div>
     </div>
-    <ul class="list-group mx-2">
-      <li class="list-group-item row d-flex justify-content-start align-items-center">
-        <h4 class="col mb-0">Resume To-Go:
-          <a class="resume-download" href="/pdf/David Generic Resume - 18 October 2022.pdf" download>
-            <i class="fa-regular fa-file-pdf"></i>
-          </a>
-        </h4>
-      </li>
 
-      <li class="list-group-item row d-flex justify-content-between">
-        <h4 class="col my-0">2022</h4>
-      </li>
-      <li class="list-group-item row d-flex justify-content-between">
-        <div class="col-8">
-          Student at Rithm School
-          <ul>
-            <li>Full Stack Web Development Bootcamp</li>
-            <li>Learning to program in an effective and professional manner</li>
-          </ul>
-        </div>
-        <div class="col-4 d-flex justify-content-end">
-          NOV 2022 - MAR 2023
-        </div>
-      </li>
+    <!-- Collapsible sections -->
+    <div class="accordion mt-2" id="resumeCollapse">
 
-      <li class="list-group-item row d-flex justify-content-between">
-        <h4 class="col my-0">2018</h4>
-      </li>
-      <li class="list-group-item row d-flex justify-content-between">
-        <div class="col-8">
-          Mechanical Project Engineer at Kamengo Technology
-          <ul>
-            <li>Spearheaded the design of proprietary heavy industrial equipment in 6 projects of 4 - 18 month durations</li>
-            <li>Led and participated in projects through the stages of initial client contact, proposal, detailed design, fabrication, and delivery</li>
-            <li>Overhauled in-house testing equipment, providing a 50% larger range of operation, new control features, and improved reliability.</li>
-          </ul>
+      <div class="card">
+        <div class="card-header" id="resumeHeading1">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse1" aria-expanded="true" aria-controls="resumeCollapse1">
+            Resume To-Go
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
         </div>
-        <div class="col-4 d-flex justify-content-end">
-          MAY 2018 - JUL 2022
-        </div>
-      </li>
 
-      <li class="list-group-item row d-flex justify-content-between">
-        <h4 class="col my-0">2018</h4>
-      </li>
-      <li class="list-group-item row d-flex justify-content-between">
-        <div class="col-8">
-          Automation Engineering Co-op at STEMCELL Technologies
-          <ul>
-            <li>Validated performance and evaluated reliability of existing scanning equipment</li>
-            <li>Developed a vial-centering mechanism using the iterative design process</li>
-          </ul>
+        <div class="collapse" id="resumeCollapse1" aria-labelledby="resumeHeading1">
+          <div class="card-body d-flex justify-content-start ml-5 mb-2">
+            <a class="resume-download" href="/pdf/David Generic Resume - 18 October 2022.pdf" download>
+              Download:
+              <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
         </div>
-        <div class="col-4 d-flex justify-content-end">
-          JAN 2017 - AUG 2017
-        </div>
-      </li>
+      </div>
 
-      <li class="list-group-item row d-flex justify-content-between">
-        <h4 class="col my-0">2016</h4>
-      </li>
-      <li class="list-group-item row d-flex justify-content-between">
-        <div class="col-8">
-          Automation Engineering Co-op at Boeing
-          <ul>
-            <li>Designed components for robotic manufacturing systems</li>
-            <li>Documented design decisions and calculations in formal technical reports</li>
-            <li>Assisted in assembling and calibrating robotic system components</li>
-          </ul>
+      <div class="card">
+        <div class="card-header" id="resumeHeading2">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse2" aria-expanded="true" aria-controls="resumeCollapse2">
+            2022
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
         </div>
-        <div class="col-4 d-flex justify-content-end">
-          MAY 2016 - AUG 2016
-        </div>
-      </li>
 
-      <li class="list-group-item row d-flex justify-content-between">
-        <h4 class="col my-0">2015</h4>
-      </li>
-      <li class="list-group-item row d-flex justify-content-between">
-        <div class="col-8">
-          Test Engineering Co-op at Ballard Power Systems
-          <ul>
-            <li>Verified hydrogen fuel cell performance under various environmental conditions</li>
-            <li>Built VBA macros to reduce data processing times</li>
-            <li>Prepared and delivered weekly presentations on testing results</li>
-          </ul>
+        <div class="collapse show" id="resumeCollapse2" aria-labelledby="resumeHeading2">
+          <div class="card-body d-flex justify-content-center">
+            <ul class="list-group">
+              <li class="list-group-item row d-flex justify-content-between">
+                <div class="col-8">
+                  Student at Rithm School
+                  <ul>
+                    <li>Full Stack Web Development Bootcamp</li>
+                    <li>Learning to create web applications and program in an effective and professional manner</li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                  NOV '22 - MAR '23
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-4 d-flex justify-content-end">
-          MAY 2015 - DEC 2015
-        </div>
-      </li>
+      </div>
 
-      <li class="list-group-item row d-flex justify-content-between">
-        <h4 class="col my-0">2013</h4>
-      </li>
-      <li class="list-group-item row d-flex justify-content-between">
-        <div class="col-8">
-          Student at The University of British Columbia
-          <ul>
-            <li>B.A.Sc. in Mechanical Engineering, Mechatronics Option</li>
-            <li>Co-operative Education Program</li>
-            <li>Graduated with Distinction</li>
-            <li>Awarded the Canadian Society of Mechanical Engineers Gold Medal for Outstanding Academic Achievement</li>
-          </ul>
+      <div class="card">
+        <div class="card-header" id="resumeHeading3">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse3" aria-expanded="true" aria-controls="resumeCollapse3">
+            2018
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
         </div>
-        <div class="col-4 d-flex justify-content-end">
-          SEP 2013 - MAY 2018
+
+        <div class="collapse show" id="resumeCollapse3" aria-labelledby="resumeHeading3">
+          <div class="card-body d-flex justify-content-center">
+            <ul class="list-group">
+              <li class="list-group-item row d-flex justify-content-between">
+                <div class="col-8">
+                  Mechanical Project Engineer at Kamengo Technology
+                  <ul>
+                    <li>Spearheaded the design of proprietary heavy industrial equipment in 6 projects of 4 - 18 month durations</li>
+                    <li>Led and participated in projects through the stages of initial client contact, proposal, detailed design, fabrication, and delivery</li>
+                    <li>Overhauled in-house testing equipment, providing a 50% larger range of operation, new control features, and improved reliability.</li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                  MAY '18 - JUL '22
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="resumeHeading4">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse4" aria-expanded="true" aria-controls="resumeCollapse4">
+            2017
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+
+        <div class="collapse show" id="resumeCollapse4" aria-labelledby="resumeHeading4">
+          <div class="card-body d-flex justify-content-center">
+            <ul class="list-group">
+              <li class="list-group-item row d-flex justify-content-between">
+                <div class="col-8">
+                  Automation Engineering Co-op at STEMCELL Technologies
+                  <ul>
+                    <li>Validated performance and evaluated reliability of existing scanning equipment</li>
+                    <li>Developed a vial-centering mechanism using the iterative design process</li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                  JAN '17 - AUG '17
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="resumeHeading5">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse5" aria-expanded="true" aria-controls="resumeCollapse5">
+            2016
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+
+        <div class="collapse show" id="resumeCollapse5" aria-labelledby="resumeHeading5">
+          <div class="card-body d-flex justify-content-center">
+            <ul class="list-group">
+              <li class="list-group-item row d-flex justify-content-between">
+                <div class="col-8">
+                  Automation Engineering Co-op at Boeing
+                  <ul>
+                    <li>Designed components for robotic manufacturing systems</li>
+                    <li>Documented design decisions and calculations in formal technical reports</li>
+                    <li>Assisted in assembling and calibrating robotic system components</li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                  MAY '16 - AUG '16
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="resumeHeading6">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse6" aria-expanded="true" aria-controls="resumeCollapse6">
+            2015
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+
+        <div class="collapse show" id="resumeCollapse6" aria-labelledby="resumeHeading6">
+          <div class="card-body d-flex justify-content-center">
+            <ul class="list-group">
+              <li class="list-group-item row d-flex justify-content-between">
+                <div class="col-8">
+                  Test Engineering Co-op at Ballard Power Systems
+                  <ul>
+                    <li>Verified hydrogen fuel cell performance under various environmental conditions</li>
+                    <li>Built VBA macros to reduce data processing times</li>
+                    <li>Prepared and delivered weekly presentations on testing results</li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                  MAY '15 - DEC '15
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="resumeHeading7">
+          <button class="btn" type="button" data-toggle="collapse" data-target="#resumeCollapse7" aria-expanded="true" aria-controls="resumeCollapse7">
+            2013
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+        </div>
+
+        <div class="collapse show" id="resumeCollapse7" aria-labelledby="resumeHeading7">
+          <div class="card-body d-flex justify-content-center">
+            <ul class="list-group">
+              <li class="list-group-item row d-flex justify-content-between">
+                <div class="col-8">
+                  Student at The University of British Columbia
+                  <ul>
+                    <li>B.A.Sc. in Mechanical Engineering, Mechatronics Option</li>
+                    <li>Co-operative Education Program</li>
+                    <li>Graduated with Distinction</li>
+                    <li>Awarded the Canadian Society of Mechanical Engineers Gold Medal for Outstanding Academic Achievement</li>
+                  </ul>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                  SEP '13 - MAY '18
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

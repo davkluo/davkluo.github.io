@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact David</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="/css/style.css" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="//kit.fontawesome.com/31bb58186a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -25,37 +25,42 @@
   </script>
 
   <div class="container">
-    <div class="row mt-5 justify-content-center align-items-center">
+    <!-- Page heading -->
+    <div class="row mt-5 page-heading">
       <div class="col-12 col-md-8 h2 text-center">Contact</div>
     </div>
+
+    <!-- Page text -->
     <div class="row mt-4 justify-content-center align-items-center">
-      <p class="col-11 col-md-9 about-text text-center">
+      <p class="col-11 col-md-9 content-text text-center">
         Thanks for visiting my website! I would love to connect with you through one of the following methods:
       </p>
     </div>
+
+    <!-- Social contact links -->
     <div class="row mt-2">
       <div class="col">
         <ul class="list-group">
-          <li class="list-group-item d-flex justify-content-between align-items-center border-0">
-            <a href="mailto:davidkluo@gmail.com" class="link-contact d-flex justify-content-center align-items-center mx-auto" id="fbContact">
+          <li class="list-group-item contact-list-item">
+            <a class="contact-link mx-auto" href="mailto:davidkluo@gmail.com">
               <i class="fa-solid fa-envelope"></i>
               <p class="fw-bold ml-2 my-0">Email</p>
             </a>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center border-0">
-            <a href="https://www.facebook.com/davluo" target="_blank" rel="noopener noreferrer" class="link-contact d-flex justify-content-center align-items-center mx-auto" id="fbContact">
+          <li class="list-group-item contact-list-item">
+            <a class="contact-link mx-auto" href="https://www.facebook.com/davluo" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-facebook"></i>
               <p class="fw-bold ml-2 my-0">Facebook</p>
             </a>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center border-0">
-            <a href="https://github.com/davkluo" target="_blank" rel="noopener noreferrer" class="link-contact d-flex justify-content-center align-items-center mx-auto" id="fbContact">
+          <li class="list-group-item contact-list-item">
+            <a class="contact-link mx-auto" href="https://github.com/davkluo" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github"></i>
               <p class="fw-bold ml-2 my-0">GitHub</p>
             </a>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center border-0">
-            <a href="https://www.linkedin.com/in/davidkluo/" target="_blank" rel="noopener noreferrer" class="link-contact d-flex justify-content-center align-items-center mx-auto" id="fbContact">
+          <li class="list-group-item contact-list-item">
+            <a class="contact-link mx-auto" href="https://www.linkedin.com/in/davidkluo/" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-linkedin"></i>
               <p class="fw-bold ml-2 my-0">LinkedIn</p>
             </a>

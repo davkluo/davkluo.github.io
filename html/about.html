@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About David</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="/css/style.css" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="//kit.fontawesome.com/31bb58186a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -25,11 +25,14 @@
   </script>
 
   <div class="container">
-    <div class="row mt-5 justify-content-center align-items-center">
+    <!-- Page heading -->
+    <div class="row mt-5 page-heading">
       <div class="col-12 col-md-8 h2 text-center">About</div>
     </div>
+
+    <!-- Carousel -->
     <div class="row my-4 justify-content-center">
-      <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel slide justify-content-center" id="aboutCarousel" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#aboutCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#aboutCarousel" data-slide-to="1"></li>
@@ -76,8 +79,10 @@
         </a>
       </div>
     </div>
+
+    <!-- Content -->
     <div class="row justify-content-center align-items-center">
-      <p class="col-11 col-md-9 about-text">
+      <p class="col-11 col-md-9 content-text">
         I am a softare engineer coming from a background of mechanical and mechatronics engineering. Throughout
         most of my professional career, I have been inclined towards creating and using software to improve
         efficiency, precision, and accuracy. Despite a long history with programming, I never had the opportunity
@@ -87,7 +92,7 @@
       </p>
     </div>
     <div class="row justify-content-center align-items-center">
-      <p class="col-11 col-md-9 about-text">
+      <p class="col-11 col-md-9 content-text">
         If there is one thing that I love to do, it is create. During my time as a mechanical engineer, I experienced the
         creative fulfillment of taking a client's functional requirements and designing a product from scratch to meet them.
         While I still love to design and make physical products, I am now also fascinated by the seemingly infinite number
@@ -96,7 +101,7 @@
       </p>
     </div>
     <div class="row justify-content-center align-items-center">
-      <p class="col-11 col-md-9 about-text">
+      <p class="col-11 col-md-9 content-text">
         Outside of work I like to hang out with my dog, travel, and play pool. Oh, and I love my food.
         Whether it be exploring new restaurants, taking on ambitious recipes, or travelling for food, good food probably
         makes up most of the highlights in my life.

@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>David's Website</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="/css/style.css" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="//kit.fontawesome.com/31bb58186a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -23,12 +23,17 @@
   </script>
 
   <div class="container">
-    <div class="row mt-5 justify-content-center align-items-center">
+    <!-- Page heading -->
+    <div class="row mt-5 page-heading">
       <div class="col-12 col-md-8 h2 text-center">Hi! I'm David.</div>
     </div>
+
+    <!-- Picture -->
     <div class="row">
       <img class="col-5 mx-auto my-4 rounded-circle" src="/img/professional-pfp.jpg">
     </div>
+
+    <!-- Text with flip box -->
     <div class="row mb-2 justify-content-center">
       <div class="col-12 col-md-8 h5 text-center my-0 d-flex align-items-center justify-content-center">I'm a
         <div class="flip-box mx-2">
@@ -49,17 +54,18 @@
       </div>
     </div>
 
-    <div class="row mt-4 contact-buttons justify-content-center">
-      <a href="mailto:davidkluo@gmail.com" class="link-contact d-flex justify-content-center align-items-center mx-3" id="fbContact">
+    <!-- Social contact links -->
+    <div class="row mt-4 contact-large-buttons justify-content-center">
+      <a class="contact-link mx-3" href="mailto:davidkluo@gmail.com">
         <i class="fa-solid fa-envelope"></i>
       </a>
-      <a href="https://www.facebook.com/davluo" target="_blank" rel="noopener noreferrer" class="link-contact d-flex justify-content-center align-items-center mx-3" id="fbContact">
+      <a class="contact-link mx-3" href="https://www.facebook.com/davluo" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-facebook"></i>
       </a>
-      <a href="https://github.com/davkluo" target="_blank" rel="noopener noreferrer" class="link-contact d-flex justify-content-center align-items-center mx-3" id="fbContact">
+      <a class="contact-link mx-3" href="https://github.com/davkluo" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a href="https://www.linkedin.com/in/davidkluo/" target="_blank" rel="noopener noreferrer" class="link-contact d-flex justify-content-center align-items-center mx-3" id="fbContact">
+      <a class="contact-link mx-3" href="https://www.linkedin.com/in/davidkluo/" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>
       </a>
     </div>
